@@ -28,35 +28,15 @@
         </nav>
     </header>
 
-        <div class="content">
-                @RenderBody()
-            </div>
-                <div class="category-wrap">
-                    <h3>etp</h3>
-                    <ul>
-                        <li><a asp-area="" asp-controller="Home" asp-action="menu2">company_list.php</a></li>
-                        <li><a asp-area="" asp-controller="Home" asp-action="menu">procedures.php</a></li>
-                        <li><a asp-area="" asp-controller="Home" asp-action="menu3">company.php</a></li>
-                        <li><a asp-area="" asp-controller="Home" asp-action="menu4">protocols_list.php</a></li>
-                        <li><a asp-area="" asp-controller="Home" asp-action="menu5">protocols.php</a></li>
-                    </ul>
-                    <p></p>
-                    <h3><div class="h3v2">demo2</div></h3>
-                    <ul>
-                        <li><a  asp-area="" asp-controller="Home" asp-action="menu6">Later</a></li>
-                        <li><a asp-area="" asp-controller="Home" asp-action="menu7">Later</a></li>
-                        <li><a asp-area="" asp-controller="Home" asp-action="menu8">Later</a></li>
-                    </ul>
-                </div>
+    @RenderBody()
 
-        <footer class="border-top footer text-muted">
-            <div class="container">
-                &copy; 2020 - ITG - <a asp-area="" asp-controller="Home" asp-action="GetApi">Privacy</a>
-            </div>
-        </footer>
-        <script src="~/lib/jquery/dist/jquery.min.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
-        @RenderSection("Scripts", required: false)
+    @RenderSection("LeftBar", required: false)
+
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
 </body>
 </html>

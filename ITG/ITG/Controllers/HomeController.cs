@@ -32,7 +32,7 @@ namespace ITG.Controllers
         }
         public IActionResult menu()
         {
-            return View();
+            return Ol();
         }
         public IActionResult menu2()
         {
@@ -61,6 +61,10 @@ namespace ITG.Controllers
         public IActionResult menu8()
         {
             return View();
+        }
+        public IActionResult Ol()
+        {
+            return View("menu", "menu6");
         }
 
         public async Task<string> GetApiMenu()
@@ -163,9 +167,14 @@ namespace ITG.Controllers
 
         }
 
-        void A()
+        public IActionResult SandBox()
         {
-
+            return View();
+        }
+        
+        public string SandBoxGet(string height, string altitude)
+        {
+            return height+ altitude;
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
