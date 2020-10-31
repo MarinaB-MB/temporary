@@ -1,12 +1,65 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-Сайт использует официальное API Газпромбанка.
-Сайт является прототипом и отражает функционал в общем. В дальнейшем будут проводиться доработки.
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" />
+<link rel="stylesheet" href="~/css/style.css" />
 
-@{
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
 
+<body>
+
+    <div id="wrapper">
+        <div id="content">
+            <div id="menu">
+                <h2>ETP</h2>
+                <ul>
+                    <li><a asp-area="" asp-controller="Home" asp-action="menu2">company_list.php</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="menu">procedures.php</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="menu3">company.php</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="menu4">protocols_list.php</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="menu5">protocols.php</a></li>
+                </ul>
+
+                <h2>Go To... </h2>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Active</a></li>
+                    <li><a href="">Link 3</a></li>
+                    <li><a href="">Link 4</a></li>
+                    <li><a href="">Link 5</a></li>
+                </ul>
+            </div>
+
+            <div id="maincontent">
+                <p><b>Вывод списка закупок, в которых были произведены обновления за последние n дней у определенного заказчика</b></p>
+
+
+                Параметры запроса (включаются в адресную строку):
+                <ul>
+                    <li>late – задается период времени;</li>
+                    <li>inn и kpp – задается конкретный заказчик.</li>
+                </ul>
+
+                Пример:
+                Есть запрос https://etp.gpb.ru/api/procedures.php?inn=7724514910&kpp=772801001&late=10
+                который отправляет данные об ИНН, КПП и о периоде времени(в днях), а в ответ получает список закупок указанного заказчика. Ответ будет отправлен в формате XML.
+                Список полей в xml документе:
+                <ul>
+                    <li>registry_number Реестровый номер процедуры;</li>
+                    <li>Number Номер лота в рамках соответствующей процедуры;</li>
+                    <li>Status Статус лота;</li>
+                </ul>
+
+                <div class="text-center"><input type="submit" value="Попробовать Пример" onclick="location.href='@Url.Action("GetApiMenu", "Home")'" /></div>
+                <p></p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</body>
 
 

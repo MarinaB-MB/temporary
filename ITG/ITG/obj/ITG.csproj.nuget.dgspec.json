@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Downloads\\ITG\\ITG\\ITG.csproj": {}
+    "C:\\Users\\Макс\\source\\repos\\ITG\\ITG\\ITG.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Downloads\\ITG\\ITG\\ITG.csproj": {
+    "C:\\Users\\Макс\\source\\repos\\ITG\\ITG\\ITG.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Downloads\\ITG\\ITG\\ITG.csproj",
+        "projectUniqueName": "C:\\Users\\Макс\\source\\repos\\ITG\\ITG\\ITG.csproj",
         "projectName": "ITG",
-        "projectPath": "C:\\Users\\user\\Downloads\\ITG\\ITG\\ITG.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Downloads\\ITG\\ITG\\obj\\",
+        "projectPath": "C:\\Users\\Макс\\source\\repos\\ITG\\ITG\\ITG.csproj",
+        "packagesPath": "C:\\Users\\Макс\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Макс\\source\\repos\\ITG\\ITG\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Макс\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

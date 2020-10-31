@@ -2,6 +2,54 @@
     ViewData["Title"] = "Home Page";
 }
 
-На данный момент в разработке
 
-<!--<div class="text-center"><input type="submit" value="Upload" onclick="location.href=''" /></div> --!>
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" />
+<link rel="stylesheet" href="~/css/style.css" />
+
+
+<body>
+
+    <div id="wrapper">
+        <div id="content">
+            <div id="menu">
+                <h2>ETP</h2>
+                <ul>
+                    <li><a asp-area="" asp-controller="Home" asp-action="menu2">company_list.php</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="menu">procedures.php</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="menu3">company.php</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="menu4">protocols_list.php</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="menu5">protocols.php</a></li>
+                </ul>
+
+                <h2>Go To... </h2>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Active</a></li>
+                    <li><a href="">Link 3</a></li>
+                    <li><a href="">Link 4</a></li>
+                    <li><a href="">Link 5</a></li>
+                </ul>
+            </div>
+
+            <div id="maincontent">
+                <p><b>Вывод cписка протоколов</b></p>
+
+                Получить список протоколов, опубликованных за прошедшие   сутки в системе коммерческих закупок ЭТП ГПБ, в виде электронного документа – XMLфайла со следующими полями:
+                <protocol registry_number="REGISTRY_NUMBER" count="COUNT">
+                    где
+                    <ul>
+                        <li>registry_number – реестровый номер аукциона</li>
+                        <li>count –кол-во протоколов</li>
+                    </ul>
+
+                    По HTTP GET запросу вида:
+                    <div class="gray"> https://etp.gpb.ru/api/protocols_list.php?updatedonly </div>
+                    который отправляет данные об ИНН, КПП и о периоде времени(в днях), а в ответ получает список закупок указанного заказчика. Ответ будет отправлен в формате XML.
+
+                    <div class="text-center"><input type="submit" value="Попробовать Пример" onclick="location.href='@Url.Action("GetApiMenu4", "Home")'" /></div>
+                    <p></p>
+            </div>
+        </div>
+    </div>
+</body>

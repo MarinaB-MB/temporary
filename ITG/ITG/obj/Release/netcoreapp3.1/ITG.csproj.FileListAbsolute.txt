@@ -43,3 +43,5 @@ C:\Users\Макс\source\repos\ITG\ITG\obj\Release\netcoreapp3.1\Razor\Views\Hom
 C:\Users\Макс\source\repos\ITG\ITG\obj\Release\netcoreapp3.1\Razor\Views\Home\menu6.cshtml.g.cs
 C:\Users\Макс\source\repos\ITG\ITG\obj\Release\netcoreapp3.1\Razor\Views\Home\menu7.cshtml.g.cs
 C:\Users\Макс\source\repos\ITG\ITG\obj\Release\netcoreapp3.1\Razor\Views\Home\menu8.cshtml.g.cs
+C:\Users\Макс\source\repos\ITG\ITG\obj\Release\netcoreapp3.1\Razor\Views\Home\Home.cshtml.g.cs
+C:\Users\Макс\source\repos\ITG\ITG\obj\Release\netcoreapp3.1\Razor\Views\Home\SandBox.cshtml.g.cs
