@@ -27,7 +27,7 @@
 
             <div id="maincontent">
                 <p><b>Вывод списка закупок, в которых были произведены обновления за последние n дней</b></p>
-                
+
 
                 Параметры запроса (включаются в адресную строку):
                 <ul>
@@ -35,7 +35,9 @@
                 </ul>
 
                 Пример:
-                Есть запрос  https://etp.gpb.ru/api/company_list.php?late=1
+                <div class="gray">
+                    Есть запрос  https://etp.gpb.ru/api/company_list.php?late=1
+                </div>
                 который отправляет данные о периоде времени(в днях), а в ответ получает список закупок всех заказчиков. Ответ будет отправлен в формате XML.
 
                 Список полей в xml документе:
@@ -46,7 +48,7 @@
                     <li>date_accept Дата принятия аккредитации в системе.;</li>
                 </ul>
 
-                <div class="text-center"><input type="submit" value="Попробовать Пример" onclick="location.href='@Url.Action("GetApiMenu2", "Home")'" /></div>
+                <div class="text-center"><input type="submit" value="Попробовать Пример" onclick="location.href='@Url.Action("GetApiMenu2", "api")'" /></div>
                 <p></p>
             </div>
         </div>

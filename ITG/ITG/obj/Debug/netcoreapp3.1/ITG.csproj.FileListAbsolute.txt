@@ -45,3 +45,4 @@ C:\Users\Макс\source\repos\ITG\ITG\obj\Debug\netcoreapp3.1\Razor\Views\Home\
 C:\Users\Макс\source\repos\ITG\ITG\obj\Debug\netcoreapp3.1\Razor\Views\Home\SandBox.cshtml.g.cs
 C:\Users\Макс\source\repos\ITG\ITG\obj\Debug\netcoreapp3.1\ITG.csprojAssemblyReference.cache
 C:\Users\Макс\source\repos\ITG\ITG\obj\Debug\netcoreapp3.1\Razor\Views\Home\Home.cshtml.g.cs
+C:\Users\Макс\source\repos\ITG\ITG\obj\Debug\netcoreapp3.1\Razor\Views\Home\PersonaAccount.cshtml.g.cs

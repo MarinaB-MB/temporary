@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Личный Кабинет";
+}
+<link rel="stylesheet" href="~/css/style.css" />
+
+<body>
+
+    <div id="wrapper">
+        <div id="content">
+
+            <div id="personal_account_content">
+                <h1>Личный кабинет пользователя</h1>
+                <p>Здесь будут выводиться Ваши активные заявки</p>
+                <div>
+                    <div id="add_doc"><p>Чтобы добавить заявку заполните форму </p></div>
+
+                    <form method="post" action="~/Home/send_doc">
+
+                        <label>Причина получения:</label><br />
+                        <input type="text" name="reason" /><br />
+
+                        <label>Название заявления:</label><br />
+                        <input type="text" name="name" /><br />
+
+                        <label>Дата обращения:</label><br />
+                        <span>
+                            <input name="month" type="text"> /
+                            <label>MM</label>
+                        </span>
+                        <span>
+                            <input name="day" type="text"> /
+                            <label>DD</label>
+                        </span>
+                        <span>
+                            <input name="year" type="text"> /
+                            <label>YYYY</label>
+                        </span>
+                        <br />
+                        <input type="submit" value="Отправить" />
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
